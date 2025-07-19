@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: #548687;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 7vmin;
+}
+
+/* -------------container-------------------- */
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2px 5px 1rem rgba(0, 0, 0, 0.4);
+  font-size: 12vmin;
+  color: #b0413e;
+  transition: all 0.1s ease-in-out 0s;
+  background-color: #ffffc7;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.box.preview {
+  color: rgba(255, 255, 255, 0.3); /* Light ghost effect */
+}
+
+.btns {
+  height: 10vmin;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 3vmin;
+  font-size: 1rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#newGame-btn {
+}
+
+.hide {
+  display: none;
+}
+
+/* -------------------footer------------------------- */
+
+.footer {
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 3vmin;
+  color: #fff;
+  margin: 1rem 0;
+  font-family: "Trebuchet MS";
+  transition: all 0.1s ease-in-out 0s;
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer:hover {
+  color: #548687;
+}
